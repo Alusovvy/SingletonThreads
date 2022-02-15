@@ -2,11 +2,9 @@ package com.company;
 
 
 import javax.sound.sampled.*;
-import java.io.File;
-import java.io.FileInputStream;
+
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.Scanner;
+
 
 public class Main {
 

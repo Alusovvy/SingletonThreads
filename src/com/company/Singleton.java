@@ -1,6 +1,7 @@
 package com.company;
 
 public final class Singleton {
+    //setting this to volatile allows as to sync threads
     private static volatile Singleton instance;
     public String value;
 
@@ -15,6 +16,8 @@ public final class Singleton {
     }
 
     public static Singleton getInstance(String value) {
+        //below we doing double check if instance exists to be sure that we won't create to instances of singleton
+        //which would be against this desing pattern
         Singleton result = instance;
         if (result != null) {
             return result;
